@@ -34,3 +34,7 @@ $ workflow debug "TypeError: getFact is not a function"
 ✓ All tests passed.
 Debug complete.
 ```
+
+## Proposed Solutions
+
+Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.
