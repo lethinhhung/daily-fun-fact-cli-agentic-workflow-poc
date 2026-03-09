@@ -29,6 +29,10 @@ Add a new feature to the project. Reads new feature requests, generates core and
 7. Move each processed file from `specs/new-features/` to `specs/generated-new-features/` (create directory if needed).
 8. Print a summary of the full pipeline to stdout.
 
+## Proposed Solutions
+
+Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.
+
 ## Error Handling
 
 - Exit with error if `specs/new-features/` does not exist or is empty.
@@ -53,7 +57,3 @@ $ workflow feature
 ✓ Moved specs/new-features/category-filter.md → specs/generated-new-features/category-filter.md
 Feature pipeline complete — 1 feature added.
 ```
-
-## Proposed Solutions
-
-Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.

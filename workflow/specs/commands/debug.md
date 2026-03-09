@@ -8,6 +8,14 @@ Debug failing code or tests. Analyzes the provided error, proposes a fix, update
 
 - An error description or failing test name passed as a CLI argument.
 
+## Flow
+
+1. Receive error description.
+2. Analyze error and identify likely source.
+3. Apply fix to source code.
+4. Re-run tests.
+5. Done.
+
 ## Behavior
 
 1. Validate that an error description is provided.
@@ -16,6 +24,10 @@ Debug failing code or tests. Analyzes the provided error, proposes a fix, update
 4. **Fix** — Apply a placeholder fix to the identified source file.
 5. **Verify** — Simulate re-running tests and print results.
 6. Print a summary of the debug session to stdout.
+
+## Proposed Solutions
+
+Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.
 
 ## Error Handling
 
@@ -34,7 +46,3 @@ $ workflow debug "TypeError: getFact is not a function"
 ✓ All tests passed.
 Debug complete.
 ```
-
-## Proposed Solutions
-
-Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.

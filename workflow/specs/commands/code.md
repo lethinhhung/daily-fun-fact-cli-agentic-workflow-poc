@@ -8,11 +8,13 @@ Generate project source code, tests, and package configuration from the derived 
 
 - `derived-spec/*` — the derived specification files produced by `workflow init`.
 
-## Output
+## Flow
 
-- `src/` — source code files (placeholder implementations)
-- `tests/` — test files matching the test cases in `derived-spec/tests.md`
-- `package.json` — project manifest with name, version, scripts, and dependencies
+1. Read derived spec files from `derived-spec/`.
+2. Generate source code at `src/`.
+3. Generate test files at `tests/`.
+4. Generate `package.json`.
+5. Done.
 
 ## Behavior
 
@@ -22,6 +24,10 @@ Generate project source code, tests, and package configuration from the derived 
 4. Generate `tests/` with placeholder test files based on `derived-spec/tests.md`.
 5. Generate `package.json` based on `derived-spec/implementation.md`.
 6. Print a summary of generated files to stdout.
+
+## Proposed Solutions
+
+Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.
 
 ## Error Handling
 
@@ -40,7 +46,3 @@ $ workflow code
 ✓ Generated package.json
 Code generation complete — 3 files generated.
 ```
-
-## Proposed Solutions
-
-Propose 3 solutions for implementing this command. For each solution, provide a brief description, pros, and cons. Create a separate workspace to run it separately with naming: `workspace/{index}-{command}-{short-description}-{timestamp}`.
