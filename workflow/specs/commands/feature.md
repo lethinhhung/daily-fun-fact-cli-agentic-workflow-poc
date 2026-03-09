@@ -15,7 +15,8 @@ Add a new feature to the project. Reads new feature requests, generates core and
 3. Generate derived specs at `derived-spec/*.md` (architecture, implementation, tests).
 4. Run `workflow code` to regenerate source code and tests.
 5. Run tests.
-6. Done.
+6. Move processed feature requests from `specs/new-features/*.md` to `specs/generated-new-features/*.md`.
+7. Done.
 
 ## Behavior
 
@@ -25,7 +26,8 @@ Add a new feature to the project. Reads new feature requests, generates core and
 4. Regenerate `derived-spec/*.md` by merging the original core spec with all feature specs from `specs/features/`.
 5. Run `workflow code` to regenerate `src/`, `tests/`, and `package.json` from the updated derived specs.
 6. Run tests and report results.
-7. Print a summary of the full pipeline to stdout.
+7. Move each processed file from `specs/new-features/` to `specs/generated-new-features/` (create directory if needed).
+8. Print a summary of the full pipeline to stdout.
 
 ## Error Handling
 
@@ -48,5 +50,6 @@ $ workflow feature
 ✓ Generated tests/index.test.ts
 → Running tests...
 ✓ All tests passed.
+✓ Moved specs/new-features/category-filter.md → specs/generated-new-features/category-filter.md
 Feature pipeline complete — 1 feature added.
 ```
