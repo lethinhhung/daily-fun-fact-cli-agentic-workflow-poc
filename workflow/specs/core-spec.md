@@ -4,6 +4,13 @@
 
 A spec-driven development CLI tool that transforms a project's core specification into working code through a structured pipeline. The workflow tool reads specs, generates derived specs, produces source code and tests, and supports iterative feature addition and debugging.
 
+## Tech Stack
+
+- TypeScript
+- Node.js
+- Jest (testing)
+- npm (package manager)
+
 ## Concept
 
 The workflow tool follows a layered transformation model:
